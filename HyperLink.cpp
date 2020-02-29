@@ -548,7 +548,7 @@ HINSTANCE CHyperLink::GotoURL(LPCTSTR url, int showcmd)
 // Activate the link
 void CHyperLink::FollowLink() 
 {	
-	CString smokLink = "http://smok95.tistory.com/entry/웹주소를-통한-파일-다운로드-WebDownloader";
+	CString smokLink = "https://smok95.tistory.com/6";
 	//int result = (int) GotoURL(m_strURL, SW_SHOW);
 	int result = (int) GotoURL(smokLink, SW_SHOW);
     if (result <= HINSTANCE_ERROR) {

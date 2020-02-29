@@ -119,7 +119,8 @@ CString CWebDownloaderDlg::GetDownloadFileUrl(void)
 
 	const char* protocols[] = {
 		"http://",
-		"https://"
+		"https://",
+		"ftp://"
 	};
 
 	for (size_t i = 0; i < _countof(protocols); i++) {
