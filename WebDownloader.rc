@@ -1,0 +1,273 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 중립 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(949)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WEBDOWNLOADER_DIALOG DIALOGEX 0, 0, 319, 88
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "WebDownloader"
+MENU IDR_MENU
+FONT 9, "맑은 고딕", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Download",IDOK,211,68,46,13
+    PUSHBUTTON      "exit",IDCANCEL,265,68,46,13
+    EDITTEXT        IDC_EDIT_FILEURL,26,7,285,14,ES_AUTOHSCROLL
+    LTEXT           "URL :",IDC_STATIC,9,9,17,8
+    LTEXT           "http://smok95.tistory.com",IDC_STATIC_ADDRESS,10,70,94,11,SS_NOTIFY,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,9,30,255,8
+    RTEXT           "",IDC_STATIC_PERCENT,276,30,27,8
+    GROUPBOX        "",IDC_STATIC,7,23,304,44
+    LTEXT           "File:",IDC_STATIC_CAPTION_FILE,10,42,13,8
+    CONTROL         "",IDC_STATIC_FILENAME,"Static",SS_LEFTNOWORDWRAP | SS_PATHELLIPSIS | WS_GROUP,29,41,278,10
+    LTEXT           "",IDC_STATIC_DN_STATE,30,55,131,8
+    RTEXT           "",IDC_STATIC_STATE_SPEED,173,55,131,8
+    PUSHBUTTON      "Open Folder",IDC_BTN_OPEN,157,68,46,13
+END
+
+IDD_DIALOG_OPTION DIALOGEX 0, 0, 270, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Option"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,157,69,50,14
+    PUSHBUTTON      "취소",IDCANCEL,213,69,50,14
+    GROUPBOX        "Download Folder",IDC_STATIC_DOWNLOAD_FOLDER,7,7,256,52
+    EDITTEXT        IDC_EDIT_DOWNLOAD_FOLDER,40,19,218,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "Path :",IDC_STATIC_DOWNLOAD_FOLDER_PATH,13,22,20,8
+    PUSHBUTTON      "변경",IDC_BUTTON_CHANGE_DOWNLOAD_FOLDER,208,39,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_WEBDOWNLOADER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 311
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_DIALOG_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU
+BEGIN
+    POPUP "Tool"
+    BEGIN
+        MENUITEM "Option [&O]",                 ID_MENU_OPTION
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS
+BEGIN
+    VK_ESCAPE,      IDOK,                   VIRTKEY, NOINVERT
+    "O",            ID_MENU_OPTION,         VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_WEBDOWNLOADER_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    ID_MENU_OPTION          "Option"
+END
+
+#endif    // 중립 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\WebDownloader.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\WebDownloader.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,9
+ PRODUCTVERSION 1,0,0,9
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "Comments", "http://smok95.tistory.com"
+            VALUE "CompanyName", "JK"
+            VALUE "FileDescription", "web file downloader"
+            VALUE "FileVersion", "1.0.0.9"
+            VALUE "InternalName", "WebDownloader.exe"
+            VALUE "LegalCopyright", "JK "
+            VALUE "OriginalFilename", "WebDownloader.exe"
+            VALUE "ProductName", "WebDownloader"
+            VALUE "ProductVersion", "1.0.0.9"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "res\\rt_manif.bin"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_WDOPTIONDLG    HTML                    "WDOptionDlg.htm"
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\WebDownloader.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
